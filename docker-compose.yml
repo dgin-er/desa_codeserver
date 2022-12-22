@@ -1,12 +1,10 @@
 version: "3"
 
 services:
-  gitea:
+  desa:
     image: docker.io/dgin/sistemasdesa_rhel:v2
     environment:
       - PASSWORD=mipassword
-    volumes:
-      - ./gitea:/data
     ports:
       - "8082:80"
       - "8083:8080"
